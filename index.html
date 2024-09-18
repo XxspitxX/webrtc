@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jitsi Meet Example</title>
+		<style>
+			body {
+				margin: 1vw;
+				padding: 0;
+				font-family: sans-serif;
+			}
+
+			video {
+				border-radius: 0.5rem;
+				width: 48vw;
+				margin: 0.5vw;
+				padding: 0;
+				background-color: lightgray;
+			}
+
+			video.local {
+				box-shadow: green 0 0.125rem 1rem;
+			}
+
+			.localUserInfo span {
+				font-weight: bold;
+			}
+
+			button {
+				margin: 0.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<input id="conferenceName" type="text" placeholder="Conference Name"/><button id="joinButton">Join</button>
+		<div id="controls"><!-- Controls are added in JS --></div>
+		<div id="audios"></div>
+		<div id="videos"></div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
